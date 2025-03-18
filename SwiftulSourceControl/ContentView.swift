@@ -42,6 +42,15 @@ struct ContentView: View {
                         Text("Yo!")
                     }
                 }
+                                .foregroundStyle(.tint)
+                            Text("New title")
+                            
+                            Button("Click here please. Thank") {
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
         .padding()
