@@ -38,27 +38,20 @@ struct ContentView: View {
         VStack {
             ScrollView {
                 VStack {
-                    ForEach(0..<20) { _ in
-                        Text("Yo!")
-                    }
-                }
-                                .foregroundStyle(.tint)
-                            Text("New title")
+                    ForEach(0..<5) { _ in
+                        Image(systemName: "magnifyingglass")
+                            .font(.largeTitle)
+                            .foregroundStyle(.tint)
+                        Text("Some New Title!")
+                        
+                        Button("Click me!") {
                             
-                            Button("Click here please. Thank") {
-                                
-                            }
                         }
                     }
                 }
             }
         }
-        .padding()
-        .onAppear {
-            // send analytics
-        }
     }
-        
 }
 
 #Preview {
