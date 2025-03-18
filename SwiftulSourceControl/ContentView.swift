@@ -46,7 +46,11 @@ struct ContentView: View {
             }
         }
         .padding()
+        .onAppear {
+            // send analytics
+        }
     }
+        
 }
 
 #Preview {
